@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="title-form">
+          <div class="title-text">
+            <h1>Contact Form</h1>
+          </div>
+          <div class="text">
+            Please fill in your information and we'll be sending your order in
+            no time.
+          </div>
+        </div>
+        <form class="form" action="#">
+          <div class="name">
+            <label for="name">Your Name</label>
+            <input
+              id="name"
+              type="text"
+              name="first-name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              id="last-name"
+              type="text"
+              name="last-name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="email">
+            <label for="email"> Your E-mail</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="ex@gmail.com"
+              required
+            />
+          </div>
+          <div class="phone">
+            <label for="phone">Phone*</label>
+            <input id="phone" type="text" name="phone" placeholder="###" />
+            <input type="text" name="phone" placeholder="###" />
+            <input type="text" name="phone" placeholder="####" />
+          </div>
+          <div class="message-subject">
+            <label for="message-subject">Message Subject*</label>
+            <select id="message-subject" name="other">
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="message">
+            <label for="message">Message*</label>
+            <textarea name="message" id="message"> </textarea>
+          </div>
+          <div class="checkbox">
+            <label for="checkbox">Verification*</label>
+            <div class="recaptcha">
+              <input type="checkbox" name="check" id="checkbox" />
+              <span>I'm not robot</span>
+            </div>
+          </div>
+          <br />
+          <div class="submit-button">
+            <div class="submit-bar"></div>
+            <input type="submit" value="SUBMIT FORM" />
+          </div>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>
